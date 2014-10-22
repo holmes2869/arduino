@@ -66,22 +66,22 @@ int setIncrementSize(int firstNeoPixel, int lastNeoPixel, int delayDuration) {
     case 3:
       
       
-      return 5;
+      return 5;//ends last function, takes a break, then returns to the next function
       break;
     case 4:
  
  
-    return 5;
+    return 5;//ends last function, takes a break, then returns to the next function
     break;
     case 5:
     
     
     return 5;
     break;
-    default: 
+    default: //ends the last function, takes a break, then goes to the default function
       
       
-      return 1;
+      return 1;//returns to the last function and replays it
   }
 }
 
@@ -91,12 +91,12 @@ int setIncrementSize(int firstNeoPixel, int lastNeoPixel, int delayDuration) {
 int setDelayDuration(int incrementSize, int delayDuration) {
   int var = incrementSize;
   switch (var) {
-    case 10:
+    case 10://insert variable with a siza and delay and then switch the variables
     
     
       return delayDuration;
       break;
-    case 5:
+    case 5://delays again then takes a break
    
    
       return delayDuration/2;
